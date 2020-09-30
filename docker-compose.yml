@@ -1,0 +1,12 @@
+# Compose file for a RedtT Validator node
+
+version: "3.7"
+services:
+  redtval:
+    build: ./redtval
+    container_name: redtval
+    volumes:
+      - "./redtval/data_dir:/root/alastria/data"
+    ports:
+      - "21000:21000"
+

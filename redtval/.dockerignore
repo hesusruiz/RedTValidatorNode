@@ -1,0 +1,3 @@
+data_dir/geth/chaindata
+data_dir/geth/lightchaindata
+data_dir/geth/nodes
