@@ -14,7 +14,7 @@ Docker-based Validator node for Alastria Red T
 
     Where XX is your company/entity name, Y is the number of processors of the machine, Z is the amount of memory in Gb and NN is a sequential counter for each machine that you may have (starting at 00). For example:
 
-    `NODE_NAME="VAL_IN2_Telsius_2_4_00"`
+    `NODE_NAME="VAL_IN2_Telsius_2_8_00"`
 
     This is the name that will appear in the public listings of nodes of the network. It does not have any other usage.
 
