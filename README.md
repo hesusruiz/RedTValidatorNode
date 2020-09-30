@@ -4,49 +4,13 @@
 
 Docker-based Validator node for Alastria Red T
 
-## System requirements
-
-**Operating System**: Can be run anywhere Docker runs.
-
-**Hardware**:
-
-| Hardware | minimum | desired |
-|:------- |:-------- |:---------|
-| **CPU's**: | 2 |  4 |
-| **Memory**: | 8 Gb |  16 Gb |
-| **Hard Disk**: | 200 Gb |  1000 Gb |
-
-
-#### TCP/UDP PORTS
-
-You'll need to open the following ports in your firewall, inbound and outbound to deploy a node:
-
-
-| Port | Type | Definition |
-|:------:|:-----:|:---------- |
-|21000| TCP/UDP | Ethereum P2P protocol (inbound and outbound for ethereum traffic) |
-
-#### IP ADDRESSES
-
-The IP resulting out of the installation process (e.g. the IPv4 part of the enode) , must not be an RFC1918 IPv4 address
-
-10.0.0.0/8
-172.16.0.0/12
-192.168.0.0/16
-
-These IP addresses are non-routable and will result in your node being unreachable and unable to participate in the blockchain.
-
-In case the installation process yields a non-routable IP address, you must verify if your node is behind a firewall, in which case you might use the firewall's external address only in the case the firewall provides for Full-cone NAT. 
-
-Restricted-Cone NAT has not been tested yet for p2p functionality.
-
 ## Installation & configuration
 
-* Clone or download the repository to the machine qhere you want to install and operate the Red T node and enter into the cloned directory.
+* Clone or download the repository to the machine where you want to install and operate the Red T node and enter into the cloned directory.
 
 * Edit the file `redtval/data_dir/GETH_ARGUMENTS.txt` and modify the line with NODE_NAME attribute according to the name you want for this node. The name SHOULD follow the convention:
 
-    VAL_XX_Telsius_Y_Z_NN
+    `VAL_XX_Telsius_Y_Z_NN`
 
     Where XX is your company/entity name, Y is the number of processors of the machine, Z is the amount of memory in Gb and NN is a sequential counter for each machine that you may have (starting at 00). For example:
 
@@ -86,6 +50,43 @@ $ cat redtval/data_dir/ENODE_ADDRESS
     Where
 
     **xxx** is the value of the ENODE_ADDRESS file
+
     **external_IP** is the external IP of your node
 
 * With that value, create a pull request to request permission
+
+## System requirements
+
+**Operating System**: Can be run anywhere Docker runs.
+
+**Hardware**:
+
+| Hardware | minimum | desired |
+|:------- |:-------- |:---------|
+| **CPU's**: | 2 |  4 |
+| **Memory**: | 8 Gb |  16 Gb |
+| **Hard Disk**: | 200 Gb |  1000 Gb |
+
+
+#### TCP/UDP PORTS
+
+You'll need to open the following ports in your firewall, inbound and outbound to deploy a node:
+
+
+| Port | Type | Definition |
+|:------:|:-----:|:---------- |
+|21000| TCP/UDP | Ethereum P2P protocol (inbound and outbound for ethereum traffic) |
+
+#### IP ADDRESSES
+
+The IP resulting out of the installation process (e.g. the IPv4 part of the enode) , must not be an RFC1918 IPv4 address
+
+10.0.0.0/8
+172.16.0.0/12
+192.168.0.0/16
+
+These IP addresses are non-routable and will result in your node being unreachable and unable to participate in the blockchain.
+
+In case the installation process yields a non-routable IP address, you must verify if your node is behind a firewall, in which case you might use the firewall's external address only in the case the firewall provides for Full-cone NAT. 
+
+Restricted-Cone NAT has not been tested yet for p2p functionality.
