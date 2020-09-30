@@ -21,7 +21,7 @@ ISTANBUL_REQUESTTIMEOUT="10000"
 # Blockchain sync mode
 SYNCMODE="full"
 # Cache size in MB
-CACHE="1000"
+CACHE="0"
 # Blockchain garbage collection mode
 GCMODE="full"
 # Target gas limit sets the artificial target gas floor for the blocks to mine
