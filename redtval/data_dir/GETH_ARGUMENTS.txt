@@ -3,7 +3,7 @@ NETID="83584648538"
 # The type of node. This Dockerfile only supports Regular nodes
 NODE_TYPE="validator"
 # The identity of the node (will be publicly displayed in Ethstats)
-NODE_NAME="VAL_IN2_Telsius_2_4_00"
+NODE_NAME="VAL_IN2_Telsius_2_8_00"
 # The P2P network listening port
 P2P_PORT="21000"
 # The Ethstats server where to send the info
