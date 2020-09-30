@@ -53,7 +53,20 @@ $ cat redtval/data_dir/ENODE_ADDRESS
 
     **external_IP** is the external IP of your node
 
-* With that value, create a pull request to request permission
+* With that value, create a pull request to request permission. When the pull request is accepted, you will see that your node starts connecting to its peers and starts synchronizing the blockchain. The process of synchronization can take hours or even one or two days depending on the speed of your network and machine.
+
+You can use the standard docker-compose commands to manage your node. For example, to stop the node:
+
+```console
+$ docker-compose down
+```
+
+To restart the node:
+
+```console
+$ docker-compose restart
+```
+
 
 ## System requirements
 
