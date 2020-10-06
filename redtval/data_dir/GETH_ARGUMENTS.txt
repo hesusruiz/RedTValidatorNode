@@ -3,7 +3,7 @@ NETID="83584648538"
 # The type of node. This Dockerfile only supports Regular nodes
 NODE_TYPE="validator"
 # The identity of the node (will be publicly displayed in Ethstats)
-NODE_NAME="VAL_IN2_Telsius_2_8_00"
+NODE_NAME="VAL_IN2_T_2_8_00"
 # The P2P network listening port
 P2P_PORT="21000"
 # The Ethstats server where to send the info
@@ -11,7 +11,7 @@ NETSTATS_TARGET="bb98a0b6442386d0cdf8a31b267892c1@netstats.telsius.alastria.io:8
 # Enable the JSON-RPC server, setting this to "--rpc"
 ENABLE_RPC="--rpc"
 # The JSON-RPC network listening address. Only allow local calls
-RPCADDR="0.0.0.0"
+RPCADDR="127.0.0.0"
 # The port to use for JSONRPC
 RPCPORT="22000"
 # Allowed protocols via JSON-RPC

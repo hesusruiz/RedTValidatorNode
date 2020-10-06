@@ -54,6 +54,7 @@ RUN \
     apt-get update && apt-get -y install \
         wget \
         nano \
+        vim \       
         mc \
     && apt-get autoremove \
     && apt-get clean
