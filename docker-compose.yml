@@ -8,5 +8,5 @@ services:
     volumes:
       - "./redtval/data_dir:/root/alastria/data"
     ports:
-      - "21000:21000"
-
+      - "21000:21000/tcp"
+      - "21000:21000/udp"
