@@ -31,4 +31,4 @@ VERBOSITY="3"
 # Per-module verbosity: comma-separated list of <pattern>=<level> (e.g. eth/*=5,p2p=4)
 VMODULE="consensus/istanbul/core/core.go=5"
 # Any additional arguments
-ADDITIONAL_ARGS="--debug --vmdebug --nodiscover"
+ADDITIONAL_ARGS="--debug --nodiscover --maxpeers 50 --mine"
